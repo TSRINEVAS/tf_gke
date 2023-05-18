@@ -1,16 +1,9 @@
 steps:
   - name: 'gcr.io/cloud-builders/git'
-    args: ['clone', '--recursive', 'https://github.com/TSRINEVAS/tf_gke/']
-  - name: 'hashicorp/terraform:1.1.0'
-    entrypoint: 'bash'
-    args:
-      - '-c'
-      - |
-        cd your-repo
-        terraform init -backend-config="bucket=$PROJECT_ID-terraform-state"
-        terraform validate
-        terraform plan -out=tfplan
-        terraform apply -auto-approve tfplan
-
-timeout: 1200s
-
+    args: ['clone', '--depth=1', 'https://github.com/your/repo.git']
+  - name: 'hashicorp/terraform:latest'
+    args: ['init']
+    dir: 'repo/path/to/terraform/config'
+  - name: 'hashicorp/terraform:latest'
+    args: ['apply', '-auto-approve']
+    dir: 'repo/path/to/terraform/config'
