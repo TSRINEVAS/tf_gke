@@ -6,7 +6,7 @@ steps:
     args:
       - '-c'
       - |
-        cd 
+        cd https://github.com/TSRINEVAS/tf_gke
         terraform init -backend-config="bucket=your-terraform-state-bucket"
         terraform validate
         terraform plan -out=tfplan
