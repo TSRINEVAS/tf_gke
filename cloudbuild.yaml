@@ -1,6 +1,6 @@
 steps:
   - name: 'gcr.io/cloud-builders/git'
-    args: ['clone', '--recursive', 'https://github.com/your-username/your-repo.git']
+    args: ['clone', '--recursive', 'https://github.com/TSRINEVAS/tf_gke/']
   - name: 'hashicorp/terraform:1.1.0'
     entrypoint: 'bash'
     args:
