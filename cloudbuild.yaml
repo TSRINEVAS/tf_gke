@@ -8,3 +8,5 @@ steps:
       cd tf_gke
       terraform init
       terraform apply -auto-approve
+     options:
+  logging: 'NONE'
