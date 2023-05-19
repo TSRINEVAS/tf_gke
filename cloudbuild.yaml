@@ -10,4 +10,4 @@ steps:
       terraform apply -auto-approve
     
       options:
-  logging: CLOUD_LOGGING_ONLY
+  logging: https://console.cloud.google.com/storage/browser/terraformlogs
