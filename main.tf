@@ -1,4 +1,4 @@
-# Configure the Google Cloud provider for CloudBuild test
+# Configure the Google Cloud provider
 provider "google" {
   credentials = file("/Users/thota/Downloads/tf_gke/gke.json")
   project     = "sunny-lore-381821"
