@@ -8,6 +8,3 @@ steps:
       cd tf_gke
       terraform init
       terraform apply -auto-approve
-    
-      options:
-  logging: https://console.cloud.google.com/storage/browser/terraformlogs
