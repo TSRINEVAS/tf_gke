@@ -1,6 +1,6 @@
 # Configure the Google Cloud provider
 provider "google" {
-  credentials = file("/gke.json")
+  credentials = file("path /gke.json")
   project     = "sunny-lore-381821"
   region      = "us-central1"
 }
