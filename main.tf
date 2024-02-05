@@ -1,6 +1,6 @@
 # Configure the Google Cloud provider
 provider "google" {
-  credentials = file("/Users/thota/Downloads/tf_gke/gke.json")
+  credentials = file("/gke.json")
   project     = "sunny-lore-381821"
   region      = "us-central1"
 }
